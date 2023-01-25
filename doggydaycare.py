@@ -75,3 +75,6 @@ str_response = input("Do you want to learn more about puppies? (y/n) ")
 if str_response == "y":
     # import webbrowser at the top of the file
     webbrowser.open("https://en.wikipedia.org/wiki/Puppy")
+
+
+# code ran and reviewed 1/22/23

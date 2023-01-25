@@ -81,7 +81,7 @@ Let's get started!
         # Wrap it all in parentheses so we can move the left side.
         return f"""
 I'm {self.name}.
-I'm a {self.species} with {self.num_legs} legs.
+I'm a {self.species.name} with {self.num_legs} legs. 
 I weigh {self.weight_kgs:.2f} kgs.
 I've been alive for {self.get_age_string()}.
 I know:

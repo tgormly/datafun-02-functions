@@ -1,0 +1,128 @@
+My interactive python notes while studying chapters 4 & 5
+
+
+
+(base) C:\Users\timgo>python
+Python 3.10.8 | packaged by conda-forge | (main, Nov 24 2022, 14:07:00) [MSC v.1916 64 bit (AMD64)] on win32
+Type "help", "copyright", "credits" or "license" for more information.
+>>>
+>>>
+>>>
+>>> # Chapter 3
+>>>
+>>>
+>>>
+>>> x = input("Input the first integer)
+  File "<stdin>", line 1
+    x = input("Input the first integer)
+              ^
+SyntaxError: unterminated string literal (detected at line 1)
+>>> x = input("Input the first integer")
+Input the first integer1
+>>> y = input("Input the second integer")
+Input the second integer  4
+>>> z = x + y
+>>> print(z)
+1  4
+>>> x = int(x)
+>>> y = int(y
+... )
+>>> z = x + y
+>>> print(z)
+5
+>>> print(f"the sum of {x} and {x} is {z}")
+the sum of 1 and 1 is 5
+>>> print(f"the sum of {x} and {y} is {z}")
+the sum of 1 and 4 is 5
+>>> counter = 1
+>>> print(Counter)
+Traceback (most recent call last):
+  File "<stdin>", line 1, in <module>
+NameError: name 'Counter' is not defined. Did you mean: 'counter'?
+>>> print(counter)
+1
+>>> counter++
+  File "<stdin>", line 1
+    counter++
+             ^
+SyntaxError: invalid syntax
+>>> counter += 1
+>>> print(counter)
+2
+>>> # if a student's grade is greater than or equal to 60, display "Passed"
+>>> grade = 55
+>>> if grade >=60
+  File "<stdin>", line 1
+    if grade >=60
+                 ^
+SyntaxError: expected ':'
+>>> if grade >=60:
+...     print('Passed')
+...
+>>>
+>>> if grade >=40:
+...     print('Passed')
+...
+Passed
+>>> print(10, 20, 30, sep=', ')
+10, 20, 30
+>>> neat
+Traceback (most recent call last):
+  File "<stdin>", line 1, in <module>
+NameError: name 'neat' is not defined. Did you mean: 'next'?
+>>> print('asdfasdf', end = ' ')
+asdfasdf >>> for counter in range(10):
+...     print(counter, end=' ')
+...
+0 1 2 3 4 5 6 7 8 9 >>>         print(counter, end=' ')
+  File "<stdin>", line 1
+    print(counter, end=' ')
+IndentationError: unexpected indent
+>>> for number in range(10000001):
+...     total = total + number
+...
+Traceback (most recent call last):
+  File "<stdin>", line 2, in <module>
+NameError: name 'total' is not defined
+>>> total = 0
+>>> for number in range(10000001):
+...     total = total + number
+...
+>>>
+>>> total
+50000005000000
+>>> for number in range(10000001):
+...     total = total + number
+...
+>>>
+>>> total
+100000010000000
+>>> x = 10
+>>> x **= 2
+>>> x
+100
+>>> x = 7
+>>> y = 5
+>>> print(f"{x} times {y} = {x*y}")
+7 times 5 = 35
+>>>
+
+Python 3.10.8 | packaged by conda-forge | (main, Nov 24 2022, 14:07:00) [MSC v.1916 64 bit (AMD64)] on win32
+Type "help", "copyright", "credits" or "license" for more information.
+>>> i = 1
+>>> j = 2
+>>> k = 3
+>>> m = 2
+>>> (i >= 1) and (j < 4)
+True
+>>> (m <= 99) and (k < m)
+False
+>>> (j >= i) or (k == m)
+True
+>>> (k + m < j) or (3 - j >= k)
+False
+>>> not (k > m)
+False
+>>>
+
+

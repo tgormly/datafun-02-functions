@@ -1,4 +1,8 @@
 """
+Tim Gormly
+1/24/2023
+44-608 Data Analytics Fundamentals
+Module 2
 
 This example illustrates basic analytics
 using just the built-in statistics module.
@@ -73,8 +77,28 @@ scores = [
     104,
 ]
 
+scores_mean = statistics.mean(scores)
+scores_median = statistics.median(scores)
+scores_mode = statistics.mode(scores)
+scores_variance = statistics.variance(scores)
+scores_standard_deviation = statistics.stdev(scores)
+
+print(f"Mean: {scores_mean:0.2f}")
+print(f"Median: {scores_median:0.2f}")
+print(f"Mode: {scores_mode}")
+print(f"Variance: {scores_variance:0.2f}")
+print(f"Standard Deviation: {scores_standard_deviation:0.2f}")
+
 # univariant time series data (one varabile over time)
 # typically, x (or time) is independent and
 # y is dependent on x (e.g. temperature vs hour of day)
 x_times = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12]
-y_temps = [2, 5, 8, 20, 21, 23, 24, 27, 30, 31, 31,32]
+y_temps = [2, 5, 8, 20, 21, 23, 24, 27, 30, 31, 31, 32]
+
+slope, intercept = statistics.linear_regression(x_times, y_temps)
+
+# print(f"Slope: {slope}")
+# print(f"Intercept: {intercept}")
+
+y_future = (slope * 13) + intercept
+print(f"At x_time 13, y_temp is predicted to be: {y_future:.2f} or {round(y_future)}")

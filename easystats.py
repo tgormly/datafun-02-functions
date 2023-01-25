@@ -19,7 +19,7 @@ Uses only Python Standard Library module:
 import statistics
 import turtle
 
-ready_for_chart = False  # edit this when ready
+ready_for_chart = True  # edit this when ready
 
 # Descriptive: Univariant Data..................................
 
@@ -252,7 +252,7 @@ if ready_for_chart:
     screen.mainloop()
     print("Remember to close the app. CONTROL c will close it.")
     print()
-
+  
 else:
     print("Ready for a chart? Edit this program to see an illustration.")
     print()

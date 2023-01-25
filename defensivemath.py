@@ -103,7 +103,7 @@ if __name__ == "__main__":
     print(f"get_circle_area(5) = {get_circle_area(5)}")
     print(f"get_circle_area(-16) = {get_circle_area(-16)}")
     print(f"get_circle_area(math.inf) = {get_circle_area(math.inf)}")
-    print(f"get_circle_area('five') = {get_circle_area('five')}")
+    print(f"get_circle_area('five') = {get_circle_area('five')}") # this string can't be multiplied in {area = 2 * math.pi * radius}, so an exception is thrown and an error message is printed out
     print()   
     print("Call print_circle_areas() function with a list of values")
     print()
