@@ -1,0 +1,2 @@
+PS C:\Users\timgo\OneDrive\Desktop\School\Spring2023\Week2\datafun-02-functions> & C:/Users/timgo/AppData/Local/Programs/Python/Python39/python.exe c:/Users/timgo/OneDrive/Desktop/School/Spring2023/Week2/datafun-02-functions/xtra_p2.py
+PS C:\Users\timgo\OneDrive\Desktop\School\Spring2023\Week2\datafun-02-functions> 
